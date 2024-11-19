@@ -1,6 +1,6 @@
 # Exception Logging Library
 
-This is a simple exception logging library for Spring Boot applications. It captures and logs exceptions thrown within your application and provides an API to retrieve these logs in JSON format. The logged data includes detailed information about the error, such as the error type, message, stack trace, source class, and method.
+This library for Spring Boot applications captures and logs any exceptions thrown within the application. It stores these logs in a database and provides an API to retrieve the logs in a structured JSON format. Each log entry includes detailed information such as the type of exception, the error message, the stack trace, and the source class and method where the exception occurred and etc.
 
 ## Features
 - Logs exception details such as type, message, stack trace, and source.
@@ -40,3 +40,18 @@ To include the local JAR file, update your `pom.xml` file as follows:
         <version>0.0.1-SNAPSHOT</version>
     </dependency>
 </dependencies>
+
+```
+### 3. Add MongoDB connection URL in your Spring Boot application:
+ 1. Open `application.properties`.
+ 2. Add the MongoDB connection details: 
+   ```xml
+<dependencies>    
+    <dependency>
+        <groupId>com.ExceptionLogger</groupId>
+        <artifactId>ExceptionHandler</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+
+```
