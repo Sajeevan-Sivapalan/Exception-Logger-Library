@@ -46,12 +46,5 @@ To include the local JAR file, update your `pom.xml` file as follows:
  1. Open `application.properties`.
  2. Add the MongoDB connection details: 
    ```xml
-<dependencies>    
-    <dependency>
-        <groupId>com.ExceptionLogger</groupId>
-        <artifactId>ExceptionHandler</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-</dependencies>
-
+spring.data.mongodb.uri=mongodb://localhost:27017/exception_logger
 ```
